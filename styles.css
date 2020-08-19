@@ -1,0 +1,133 @@
+/* 01. better to start with following code, * and container */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.container{
+    margin: 1% 6%;
+}
+
+.nav-top{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.4% 0;
+}
+
+.nav-top svg{
+    cursor: pointer;
+}
+
+.nav-top h2{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 2.2em;
+}
+
+.nav-open ul li a{
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.nav-open{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 6% 0;
+    align-items: center;
+    justify-items: center;
+    opacity: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.nav-open h3, li{
+    margin-bottom: 10%;
+}
+
+.nav-open img{
+    padding: 0.5em;
+}
+
+.nav-open ul li a:hover{
+    border-bottom: 1.4px solid grey;
+    color: #1eb894;
+}
+
+/* 02. important part to know, resize bigger images */
+.s1{
+    width: 100%;
+    height: 70vh;
+    background-image: url(img/000.jpeg);
+    background-size: cover;
+    background-position: center 28%;
+}
+
+/* 03. make 2 pictures sit on top of each other and animate later */
+.s2 .nature{
+    position: absolute;
+    width: 40%;
+    top: 10%;
+    left: 50%;
+}
+
+.s3 .time{
+    position: absolute;
+    width: 40%;
+    top: 10%;
+}
+
+/* 04. Add text linear gradient */
+.s1 h2{
+    font-size: 2em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+    background: linear-gradient(to right, #23a1ad, #69a4ba);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 05. adjust position of page 2 and page 3 */
+.s2{
+    margin: 20% 5%;
+}
+
+.s3{
+    margin-left: 5%;
+    margin-top: 40%;
+    margin-bottom: 18%;
+}
+
+.s3 .description{
+    padding-left: 45%;
+}
+
+.s2 .description h2, .s3 .description h2{
+    padding-bottom: 1em;
+}
+
+.s2 .description p, .s3 .description p{
+    padding-bottom: 5px;
+    font-size: 1.15em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
